@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="css/html5reset.css"> 
+    <link rel="stylesheet" type = "text/css" href="css/style.css"> 
+    <link rel="shortcut icon" type="image/jpg" href="images/heart.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <title>Sarah Stupak's Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Sarah Stupak's Portfolio</h1>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li ><a href="extracurriculars.html">Extracurriculars</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li id = "current"><a href="contact.html">Contact</a></li>
+        </ul>
+        
+      </nav>
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown Menu</button>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="extracurriculars.html">Extracurriculars</a></li>
+            <li><a href="fun.html">Fun</a></li>
+            <li id = "current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <header id = "main">
+        <h2>Contact Form</h2> 
+        
+      </header>
+
+    
+    <body>
+        <form action = "https://formspree.io/f/myylqqaw" method = "post">
+     <form>
+      <fieldset>
+    
+        <label for="name_id">Your Name</label>
+        <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+    
+        <label for="email_id">Your Email</label>
+        <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+    
+        <label for="phone_id">Your Phone Number</label>
+        <input type="tel" name="phone" id = "phone_id" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        
+        
+    
+    
+        <label for="msg">Leave A Message</label>
+        <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+    
+        <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+        <label for ="cBox">Remember me</label>
+    
+        <input type="submit" value = "Contact Me">
+      </fieldset>
+     </form>
+     <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Sarah Stupak - Web Design 2021</p>
+    </footer>
+ 
+    </body>
+    </html>
